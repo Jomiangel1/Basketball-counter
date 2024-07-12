@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/BasketballScoreboard/img/basketball-ball.svg">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="scoreboard.css">
+    <script src="scoreboard.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="first-heading">WELCOME TO YOUR BASKETBALL SCOREBOARD!</h1>
+    <div id="full-container">
+        <div id="content">
+            <div id="home">
+                <h1 id="heading">HOME</h1>
+                <h1 id="board-home">0</h1>
+                <button id="count-one-home" onclick="countOneHome()">+1</button>
+                <button id="count-two-home" onclick="countTwoHome()">+2</button>
+                <button id="count-three-home" onclick="countThreeHome()">+3</button>
+            </div>
+            
+            <div id="guest">
+                <h1 id="heading">GUEST</h1>
+                <h1 id="board-guest">0</h1>
+                <button id="count-one-guest" onclick="countOneGuest()">+1</button>
+                <button id="count-two-guest" onclick="countTwoGuest()">+2</button>
+                <button id="count-three-guest" onclick="countThreeGuest()">+3</button>
+            </div>
+        </div>
+
+        <button id="submit" onclick="submit()">Submit</button>
+        <button id="new-game" onclick="newGame()">New Game</button>
+        <p id="winner"></p>
+    </div>
+</body>
+</html>
